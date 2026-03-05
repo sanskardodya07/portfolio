@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach(item => {
+
+  const header = item.querySelector(".accordion-header");
+
+  header.addEventListener("click", () => {
+
+    const currentlyActive = document.querySelector(".accordion-item.active");
+
+    if(currentlyActive && currentlyActive !== item){
+      currentlyActive.classList.remove("active");
+    }
+
+    item.classList.toggle("active");
+
+  });
+
+});
+
+</script>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+
+        <div class="logo">Sanskar Shrigopal Dodya</div>
+
+        <nav class="nav">
+        <a href="#">Home</a>
+        <a href="https://drive.google.com/file/d/1Y4dTQz5RnsViv7smWqV-QOPcgTb4p8XK/view?usp=drive_link">Resume</a>
+        <a href="https://github.com/sanskardodya07">GitHub</a>
+        <a href="https://www.linkedin.com/in/sanskar-dodya-062943376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </nav>
+
+    </div>
+</header>
+
+<div class="container">
+
+<!-- LEFT PANEL -->
+<aside class="left-panel">
+
+<div class="profile">
+<h1>Sanskar Shrigopal Dodya</h1>
+<p class="role">Student at Government Polytechnic, Chhatrapati Sambhajinagar</p>
+</div>
+
+<div class="section">
+<h3>Education</h3>
+<ul>
+    <li>
+        <p>Pursuing Diploma in AIML</p>
+        <p>Government Polytechnic Chhatrapati Sambhainagar</p>
+        <p>2026-27</p>
+    </li>
+    <li>
+        <p>Obtained SSC Certificate from MSBSHSE</p>
+        <p>2023-24</p>
+    </li>
+</ul>
+</div>
+
+<div class="section">
+<h3>Experience</h3>
+<p>None</p>
+<!--
+<p>ABC Tech</p>
+<p>2024</p>
+-->
+</div>
+
+<div class="section">
+<h3>Contact</h3>
+<p>sanskardodya07@gmail.com</p>
+<p>github.com/sanskardodya07</p>
+</div>
+
+</aside>
+
+
+
+<!-- RIGHT PANEL -->
+<main class="right-panel">
+
+<div class="accordion">
+
+    <div class="accordion-item">
+
+        <button class="accordion-header">
+        Skills
+        </button>
+
+        <div class="accordion-content">
+
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div>
+            <div class="card">OOPs</div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="accordion-item">
+
+        <button class="accordion-header">
+        Projects
+        </button>
+
+        <div class="accordion-content">
+
+            <div class="project">
+                <h3>Currently None</h3>
+                <!--<p>Python NLP chatbot with context understanding.</p>-->
+            </div>
+
+            <!--
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>Full stack store with payment integration.</p>
+            </div>
+            -->
+        </div>
+
+    </div>
+
+
+
+    <div class="accordion-item">
+
+        <button class="accordion-header">
+        Achievements
+        </button>
+
+        <div class="accordion-content">
+
+            <ul>
+            <li>Winner – Technova C-Code Error Hunt 2025</li>
+            <li>Runner-Up – IEDSSA Sports Competition(Chess) 24-25</li>
+            <li>3rd Prize - Supernova CodeBurst DSA Blind Coding</li>
+            <li>Event Management Member at CASA College Society</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<footer class="site-footer">
+    <p>© 2026 Sanskar Shrigopal Dodya • Built with HTML, CSS & JS</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
